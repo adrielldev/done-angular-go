@@ -14,11 +14,12 @@ var (
 )
 
 func ConnectDB() {
-	connString := "host=localhost user=postgres password=123 dbname=done"
-	DB, err := gorm.Open(postgres.Open(connString))
+	stringDeConexao := "host=localhost user=postgres password=123 dbname=done"
+	DB, err = gorm.Open(postgres.Open(stringDeConexao))
 	if err != nil {
 		log.Panic("Erro ao conectar com banco de dados")
 	}
+
 	DB.AutoMigrate(&models.Task{})
 
 }

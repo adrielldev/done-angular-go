@@ -6,6 +6,6 @@ import (
 
 type Task struct {
 	gorm.Model
-	Name string `json:"name"`
-	Done bool   `json:"done"`
+	Name string `json:"Name"`
+	Done bool   `json:"Done"`
 }
