@@ -6,7 +6,7 @@ backend:
 frontend:
 1. inicialização projeto
 2. crud da api no front
-> pegar todas tasks
+> pegar todas tasks - ok
 > ver uma task especifica
 > criar task
 > editar task

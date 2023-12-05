@@ -1,27 +1,22 @@
-import { Component,inject } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
-import { TaskService } from './task.service';
-import { Task } from './task';
+
+
+import { RouterModule } from '@angular/router';
+import { TaskListComponent } from './task-list/task-list.component';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet],
+  imports: [CommonModule, RouterModule,TaskListComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
 
-  taskService:TaskService = inject(TaskService)
-  taskList:Task[] = []
   title = 'frontend';
 
   // pegar os dados do backend
-  constructor(){
-    this.taskService.getAllTasks().then(res=> {
-      this.taskList = res
-      console.log(this.taskList)
-    })
-  }
+
 }

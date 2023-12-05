@@ -10,7 +10,6 @@ export class TaskService {
 
   async getAllTasks(): Promise<Task[]> {
     const data = await fetch(this.url);
-    console.log(data)
     return await data.json() ?? [];
   }
 
