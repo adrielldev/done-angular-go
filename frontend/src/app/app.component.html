@@ -1,0 +1,12 @@
+
+
+<main class="main">
+  <header>Done</header>
+  <p>O melhor sistema para gerenciar suas tarefas</p>
+  <h1 *ngFor="let task of taskList">
+    {{task.name}}
+  </h1>
+</main>
+
+
+<router-outlet></router-outlet>
