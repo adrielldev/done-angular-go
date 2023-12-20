@@ -18,6 +18,10 @@ export class TaskService {
     return await data.json() ?? {};
   }
 
+  async createTask(task:Task) {
+
+  }
+
   submitApplication(firstName: string, lastName: string, email: string) {
     console.log(firstName, lastName, email);
   }

@@ -1,4 +1,14 @@
-<h4>
-  id da task:
-  {{taskId}}
-</h4>
+<div class="task" *ngIf="!taskNotFound">
+  <h4>
+    Nome task:
+    {{task.name}}
+  </h4>
+  <h4>
+    Status:
+    {{task.done}}
+  </h4>
+</div>
+
+<div *ngIf="taskNotFound">
+  <h4>Tarefa não encontrada!</h4>
+</div>

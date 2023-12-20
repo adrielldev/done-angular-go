@@ -1,6 +1,7 @@
 package controllers
 
 import (
+	"fmt"
 	"net/http"
 
 	"github.com/adrielldev/done-angular-go/database"
@@ -29,6 +30,7 @@ func CreateTask(c *gin.Context) {
 func GetTaskById(c *gin.Context) {
 	var task models.Task
 	id := c.Params.ByName("id")
+	fmt.Println(id)
 	database.DB.First(&task, id)
 
 	if task.ID == 0 {

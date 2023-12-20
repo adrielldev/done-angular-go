@@ -1,15 +1,21 @@
-backend:
-3. adicionar coluna de id dias da semana
-4. tabela dias da semana
-5. lógica dias da semana
+
+v0.1:
+
 
 frontend:
-1. inicialização projeto
+1. inicialização projeto - ok
 2. crud da api no front
 > pegar todas tasks - ok
-> ver uma task especifica
+> ver uma task especifica - ok 
 > criar task
 > editar task
 > deletar task
+> estilização
 
+backend:
+3. testes rotas
+
+frontend:
+4. testes unitarios
+5. testes de integração
 
